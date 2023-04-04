@@ -1,14 +1,15 @@
 package com.bridgelabz.hashtable;
+
 import java.util.*;
 
 public class HashTable {
 
-	void wordFrequency(String str){
+	void wordFrequency(String str1){
 		
 	
 		Map<String,Integer> m = new HashMap<>();
  
-        String array[] = str.split(" ");
+        String array[] = str1.split(" ");
  
         for(int i = 0; i < array.length; i++){
 
@@ -34,8 +35,9 @@ public class HashTable {
     	HashTable table = new HashTable();
     	
     	String str = "To be or not to be";
+    	String str1 = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
     	
-        table.wordFrequency(str);
+        table.wordFrequency(str1);
         
     }
 
